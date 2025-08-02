@@ -1,0 +1,76 @@
+;  CONSTANTS FROM C64/CX16 OS
+
+;SYTBND = $30   ;END OF SYMBOL TABLE (BASIC FRETOP)
+SATUS	= $90           ;I/O STATUS BYTE
+
+TIME	= $A3           ;JIFFY CLOCK
+FNLEN	= $B7           ;FILE NAME LENGTH
+FNADR	= $BB           ;FILE NAME ADDRESS
+
+NDX	= $C6           ;NUMBER CHARS IN BUFFER
+KEYD	= $26F          ;KEYBOARD INPUT BUFFER
+
+BREADY	=$E386
+PRT	=$E716
+SETMSG	=$FF90
+FILPAR	=$FFBA
+SETNAM	=$FFBD
+FOPEN	=$FFC0
+FCLOSE	=$FFC3
+CHKIN	=$FFC6
+CKOUT	=$FFC9
+CLRCH	=$FFCC
+BASIN	=$FFCF
+BSOUT	=$FFD2
+STOP	=$FFE1
+GETIN	=$FFE4
+
+;
+;  CONSTANTS
+;
+
+LINES	= $3A
+STPVAL	= $7F           ;VALUE FOR CHECKING STOP KEY
+STKVAL	= $FF           ;INITIAL STACK VALUE
+
+
+;   ********************
+;   * ZERO PAGE STORAGE
+;   ********************
+
+	* = $02
+
+SYMTBL	*=*+2
+SAVEY	*=*+1           ;SAVE .Y (PTCH)
+SAVEX	*=*+1           ;SAVE .X (WSW)
+
+IPC	*=*+2
+TBLPTR	*=*+2
+INPMIN	*=*+2           ;INPUT RANGE MIN
+PNT1	*=*+2
+STSAVE	*=*+2           ;SYMBOL TABLE BEGIN
+T0	*=*+2           ;INDIRECT POINTER IN BASE PAGE
+USER	*=*+2           ;SAVE AREA FOR E. C. READ
+ISYEND	*=*+2
+BOTS	*=*+2           ;SYM TABLE SORT PTR
+
+MIDS	*=*+2           ;SYM TABLE SORT PTR
+
+TOPS	*=*+2           ;SYM TABLE SORT PTR
+DELS	*=*+2           ;SYM TABLE SORT PTR
+ITOPS	*=*+2           ;SYM TABLE SORT PTR
+DFLTDN	*=*+1           ;DEFAULT DRIVE
+COUNT	*=*+1           ;COUNTER FOR SYMBOL MOVE
+FIRST	*=*+1           ;BINARY SEARCH VARIABLE
+LAST	*=*+1           ;BINARY SEARCH VARIABLE
+BTEMP	*=*+1           ;BINARY SEARCH VARIABLE
+
+;*********************************
+;* DEFINITIONS CONTROLLING SFILE
+;* FOR GET CHARACTER SOURCE
+;*********************************
+
+FRMSRC	= $80           ;SOURCE FILE BIT
+FRMLIB	= $40           ;LIBRARY FILE OPEN
+FRMMAC	= $20           ;MACRO BEING SCANNED
+FRMPRM	= $10           ;EXPANDING MACRO PARAMETER

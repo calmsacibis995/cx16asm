@@ -1,0 +1,19 @@
+; *****************
+; *   RAM USAGE   *
+; *****************
+
+SYTBST	;SYMBOL TABLE AREA
+
+WORKA	;FOR XREF
+WORKB	=WORKA+$400
+
+	*=$8800         ;UP TO THE START OF THE MACRO AREA
+SYEND	=*-1
+
+MACTAB	;MACRO DEFINITION AREA
+	*=*+$1400
+MCTBND	=*-1
+
+MCSTCK	;MACRO STACK
+	*=*+$400
+MCSTND	=*-1            ;THIS SHOULD COME TO $7CFF
