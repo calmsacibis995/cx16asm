@@ -311,7 +311,7 @@ SRCMSG	!PET $D,"source file name?",$A0
 FNERR	!PET $D,"file name error",$8D
 LIBERR	!PET $D,".lib error",$8D
 STTMSG
-	!PET $D,"commander x16 resident assembler",$D
+	!PET $D,"commander x16 resident assembler v080225",$D
 	!PET "(c) 2025 the commander x16 community",$D
 	!PET "(c) 1979-82 commodore business machines",$D
 	!PET " https://github.com/calmsacibis995/cx16asm",$D,$D
