@@ -1,6 +1,6 @@
 # cx16asm
 A macro assembler for the Commander X16. Derived from the C64 macro assembler sources [here](https://github.com/mist64/cbmsrc/tree/master/ASSEMBLER_C64_REC).
-![image](https://github.com/calmsacibis995/pics/cx16asm.png)
+![image](https://github.com/calmsacibis995/blob/main/pics/cx16asm.png)
 
 ## Unimplemented features
 TODO
