@@ -10,3 +10,5 @@ TODO
 
 ## Bugs (in progress)
  * If no input is given to any of the prompts, the program crashes and puts the user into the monitor.
+ * Attempting to compile a program (tested with Omega Race) causes BASIC to throw a `?ILLEGAL QUANTITY ERROR IN 10` error.
+ * You tell me the rest! Make an issue with your bug described and I will try to respond as quickly as I can.
