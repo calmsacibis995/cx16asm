@@ -14,15 +14,3 @@ START:
 	LDA #$80
 	JSR SETMSG
 	JMP PASS1
-
-; Switch the charset to lowercase
-LCASESW:
-	LDA #9			;Enable switching the charset
-	JSR $FFD2
-	LDA #14			;Switch the charset to petscii lowercase
-	JSR $FFD2
-	LDA #8			;Disable switching the charset
-	JSR $FFD2
-	LDA #147		;Clear the screen and put the cursor the top-left corner
-	JSR $FFD2
-	RTS
