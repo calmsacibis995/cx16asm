@@ -1,13 +1,13 @@
 ; Switch the charset to lowercase
 LCASESW:
 	LDA #9			;Enable switching the charset
-	JSR $FFD2
+	JSR BSOUT
 	LDA #14			;Switch the charset to petscii lowercase
-	JSR $FFD2
+	JSR BSOUT
 	LDA #8			;Disable switching the charset
-	JSR $FFD2
+	JSR BSOUT
 	LDA #147		;Clear the screen and put the cursor the top-left corner
-	JSR $FFD2
+	JSR BSOUT
 	RTS
 
 PASS1	LDX #STKVAL
