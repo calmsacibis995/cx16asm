@@ -253,18 +253,6 @@ SOPEN	LDA #$02        ;OPEN SOURCE FILE
 	STA SFILE
 	RTS
 
-SCROFF	LDA NOPRIN
-	BPL XXX1
-	LDA $D011
-	AND #$EF
-	STA $D011
-XXX1	RTS
-
-SCRON	LDA $D011
-	ORA #$10
-	STA $D011
-	RTS
-
 ; ********************
 ; *      PASS2
 ; ********************
