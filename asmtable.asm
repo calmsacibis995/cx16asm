@@ -311,8 +311,10 @@ SRCMSG	!PET $D,"source file name?",$A0
 FNERR	!PET $D,"file name error",$8D
 LIBERR	!PET $D,".lib error",$8D
 STTMSG
-	!PET $D,"commander x16 resident assembler for rom r48",$D
+	!PET $D,"commander x16 resident assembler v1.0",$D
+	!PET "derived from the c64 resident assembler",$D,$D
 	!PET "(c) 1979-82 commodore business machines",$D
+	!PET "(c) 2025-26 stefanos stefanidis",$D
 	!PET " https://github.com/calmsacibis995/cx16asm",$D,$D
 	!PET "object file (cr or d:name):",$A0
 HCMSG	!PET $D,"hard copy (cr/y or n)?",$A0
